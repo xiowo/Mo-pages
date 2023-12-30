@@ -1,0 +1,81 @@
+        @font-face {
+            font-family: AlimamaFangYuanTiVF-Thin;
+            src: url(/resources/fonts/AlimamaFangYuanTiVF-Thin.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #7F868F;
+        }
+
+        body,
+        html {
+            min-height: 100vh;
+            display: flex;
+            font-family: AlimamaFangYuanTiVF-Thin;
+            background-color: #FAFBFD;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            bottom: 60px;
+            margin: auto;
+            padding: 15px;
+        }
+
+        .head {
+            display: flex;
+            align-items: center;
+            margin: 0 15px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            height: 50px;
+        }
+
+        .logo img {
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .logo .Mo {
+            font-size: 25px;
+            font-weight: 600;
+            color: rgb(18, 43, 70);
+        }
+
+        .body {
+            margin-top: 20px;
+            padding: 20px 40px;
+            font-size: 14px;
+            background-color: #ffffff;
+            border: 1px solid #e7e9ec;
+            border-radius: 3px;
+        }
+
+        .content {
+            margin-top: 7px;
+            padding: 10px;
+            background: #f7fafe;
+            color: #7F868F;
+            border: 1px solid #E7E9EC;
+            border-radius: 4px;
+        }
+
+        .footer {
+            margin-bottom: 0.1em;
+            margin: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
