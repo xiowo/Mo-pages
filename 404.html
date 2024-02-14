@@ -6,49 +6,67 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>你的页面被吃掉啦ԅ(¯﹃¯ԅ)</title>
+    <title>404 | 你的页面被吃掉啦~</title>
+
+    <link rel="stylesheet" href="/resources/css/main.css">
     <style>
-        a {
-            color: #4e4e4e;
-            text-decoration: none;
+        * {
+            padding: 0;
+            margin: 0;
         }
 
-        body,
-        html {
-            min-height: 100vh;
-            background-color: #f3f5f7;
-        }
-
-        .container {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .Mo-content {
+            margin: 100px auto;
+            padding: 25px;
+            font-size: 14px;
+            color: #999;
             text-align: center;
         }
 
-        .warning {
-            font-size: 50px;
+        @media screen and (min-width: 650px) {
+            .Mo-content {
+                width: 650px;
+            }
         }
 
-        .home a {
-            display: inline-block;
-            width: 100px;
-            height: 30px;
-            line-height: 30px;
-            border: 2px solid #505050;
-            border-radius: 15px;
+        .pic-box {
+            width: 280px;
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+
+        .content-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-box p {
+            font-size: 14px;
+            line-height: 25px;
+            color: #61666D;
+        }
+
+        .center-title {
+            color: #000;
+            font-size: 20px;
+            margin: 50px 0 12px 0;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="warning">⚠️</div>
-        <p>正在建设中...</p>
-        <p>前面的区域以后再来探索吧</p>
-        <div class="home">
-            <a href="https://xiowo.net">返回首页</a>
+    <div class="Mo-content">
+        <div class="content-box">
+            <img class="pic-box" src="/resources/img/MortalCat.png">
+            <h1 class="center-title">404 你的页面被吃掉了</h1>
+            <p>当前页面无法访问或不存在，到其他地方看看吧（￣︶￣）↗</p>
+        </div>
+
+        <button onclick="window.location.href = `/`;">返回首页</button>
+
+        <div class="footer" style=" margin-top: 65px;">
+            ©2024 MortalCat
         </div>
     </div>
 </body>
