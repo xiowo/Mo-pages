@@ -48,6 +48,22 @@
             margin: auto;
             padding: 15px;
         }
+        
+        .countdown {
+          display: flex;
+          margin: 0 auto;
+        }
+        
+        .countdown div {
+          width: 80px;
+          height: 50px;
+          margin: 0 0.3rem;
+          font-size: 30px;
+          text-align: center;
+          line-height: 50px;
+          background-color: #fff;
+          border-radius: 25px;
+        }
 
         .main {
             margin-top: 20px;
