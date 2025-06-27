@@ -1,5 +1,5 @@
         @font-face {
-            font-family: AlimamaFangYuanTiVF-Thin;
+            font-family: "AlimamaFangYuanTiVF-Thin";
             src: url(/resources/fonts/AlimamaFangYuanTiVF-Thin.ttf);
         }
 
@@ -13,18 +13,16 @@
             color: #7F868F;
         }
 
-        body,
-        html {
-            min-height: 100vh;
+        body {
             display: flex;
-            font-family: AlimamaFangYuanTiVF-Thin;
-            background-color: #fffae5;
             flex-direction: column;
-            align-items: center;
+            height: 100vh;
+            background-color: #fffae5;
+            font-family: "AlimamaFangYuanTiVF-Thin", sans-serif;
         }
 
         button {
-            margin: 20px 5px 20px 5px;
+            margin: 20px 5px;
             border: 2px solid #ffbd59;
             background-color: #ffbd59;
             color: #fff;
@@ -32,6 +30,7 @@
             border-radius: 10PX;
             width: 140px;
             height: 25px;
+            line-height: 25px;
         }
 
         @media screen and (max-width: 600px) {
@@ -40,33 +39,29 @@
             }
         }
 
-        .Mo-container {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            bottom: 60px;
+        .MoMain {
+            max-width: 550px;
             margin: auto;
-            padding: 15px;
-        }
-        
-        .countdown {
-          display: flex;
-          margin: 0 auto;
-        }
-        
-        .countdown div {
-          width: 80px;
-          height: 50px;
-          margin: 0 0.3rem;
-          font-size: 30px;
-          text-align: center;
-          line-height: 50px;
-          background-color: #fff;
-          border: 1px solid #e7e9ec;
-          border-radius: 25px;
         }
 
-        .main {
+        .countdown {
+            display: flex;
+            justify-content: center;
+        }
+
+        .countdown div {
+            width: 80px;
+            height: 50px;
+            margin: 0 0.3rem;
+            font-size: 30px;
+            text-align: center;
+            line-height: 50px;
+            background-color: #fff;
+            border: 1px solid #e7e9ec;
+            border-radius: 25px;
+        }
+
+        .MsgBox {
             margin-top: 20px;
             padding: 20px 40px;
             font-size: 14px;
